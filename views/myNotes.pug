@@ -1,0 +1,19 @@
+doctype html
+html 
+    head 
+        title Natours
+        link(rel="stylesheet", href="css/style.css")
+        link(rel="shortcut icon", type="image/png", href="img/favicon.png")
+    
+    body 
+        //- h1 The Park Camper   This type of comment will not be shown in Elements tab in chrome
+        //- h1 The Park Camper   This type of comment will be shown in Elements tab in chrome
+
+        h1= tour                      //- If we put "=" after element the things after it will be considered JS
+        h2= user.toUpperCase()       //- We can also use JS with it
+
+        -const x = 2;         //- Unbuffered code that will not effect output like declaring variables
+        h3= 2 * x              //- Buffered code that will be shown in the output
+        p This is some text 
+
+        //- h2 New Heading | #{tour}       //- Template strings
